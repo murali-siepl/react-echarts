@@ -1,0 +1,400 @@
+{
+    "basic": [
+      {
+        "name": "height",
+        "component": "Input",
+        "type": "text",
+        "value": "300px",
+        "des": "Height"
+      },
+      {
+        "name": "loading",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Whether to display loading"
+      },
+      {
+        "name": "color",
+        "component": "Select",
+        "mode": "tags",
+        "type": "array",
+        "value": [
+          "#2ec7c9",
+          "#b6a2de",
+          "#5ab1ef",
+          "#ffb980",
+          "#d87a80",
+          "#8d98b3",
+          "#e5cf0d",
+          "#97b552",
+          "#95706d",
+          "#dc69aa",
+          "#07a2a4",
+          "#9a7fd1",
+          "#588dd5",
+          "#f5994e",
+          "#c05050",
+          "#59678c",
+          "#c9ab00",
+          "#7eb00a",
+          "#6f5553",
+          "#c14089"
+        ],
+        "des": "Color palette list. If the series does not have a color set, colors will be taken from the default theme in a circular manner for each series"
+      }
+    ],
+    "title": [
+      {
+        "name": "titleText",
+        "component": "Input",
+        "type": "text",
+        "value": "",
+        "des": "Chart title"
+      },
+      {
+        "name": "titleFontSize",
+        "component": "Input",
+        "type": "number",
+        "value": 20,
+        "des": "Title font size"
+      },
+      {
+        "name": "titleColor",
+        "component": "Input",
+        "type": "text",
+        "value": "#333",
+        "des": "Chart title color"
+      },
+      {
+        "name": "titleFontWeight",
+        "component": "Select",
+        "type": "array",
+        "value": [
+          "normal",
+          "bold",
+          "bolder",
+          "lighter",
+          "200",
+          "300",
+          "400"
+        ],
+        "des": "Chart title font weight"
+      },
+      {
+        "name": "titleLeft",
+        "component": "Select",
+        "type": "array",
+        "value": [
+          "left",
+          "right",
+          "center"
+        ],
+        "des": "Distance of title component from the left of the container"
+      },
+      {
+        "name": "titleTop",
+        "component": "Select",
+        "type": "array",
+        "value": [
+          "top",
+          "middle",
+          "bottom"
+        ],
+        "des": "Distance of title component from the top of the container"
+      }
+    ],
+    "legend": [
+      {
+        "name": "showLegend",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": true,
+        "des": "Whether to show the legend"
+      },
+      {
+        "name": "legendOrient",
+        "component": "Select",
+        "type": "array",
+        "value": [
+          "horizontal",
+          "vertical"
+        ],
+        "des": "Layout orientation of the legend list"
+      },
+      {
+        "name": "legendLeft",
+        "component": "Select",
+        "type": "array",
+        "value": [
+          "left",
+          "right",
+          "center"
+        ],
+        "des": "Distance of legend component from the left of the container"
+      },
+      {
+        "name": "legendTop",
+        "component": "Select",
+        "type": "array",
+        "value": [
+          "top",
+          "middle",
+          "bottom"
+        ],
+        "des": "Distance of legend component from the top of the container"
+      }
+    ],
+    "grid": [
+      {
+        "name": "gridTop",
+        "component": "Input",
+        "type": "number",
+        "value": 40,
+        "des": "Grid top margin"
+      },
+      {
+        "name": "gridBottom",
+        "component": "Input",
+        "type": "number",
+        "value": 40,
+        "des": "Grid bottom margin"
+      },
+      {
+        "name": "gridLeft",
+        "component": "Input",
+        "type": "number",
+        "value": 60,
+        "des": "Grid left margin"
+      },
+      {
+        "name": "gridRight",
+        "component": "Input",
+        "type": "number",
+        "value": 40,
+        "des": "Grid right margin"
+      }
+    ],
+    "tooltip": [
+      {
+        "name": "showTooltip",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": true,
+        "des": "Whether to show the tooltip"
+      },
+      {
+        "name": "axisPointer",
+        "component": "Select",
+        "type": "array",
+        "value": [
+          "shadow",
+          "cross"
+        ],
+        "des": "axisPointer type"
+      }
+    ],
+    "toolbox": [
+      {
+        "name": "toolbox",
+        "component": "TextArea",
+        "type": "object",
+        "value": {},
+        "des": "Toolbox configuration"
+      },
+      {
+        "name": "showToolbox",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Whether to show the toolbox"
+      },
+      {
+        "name": "showToolboxDataZoom",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Data zoom"
+      },
+      {
+        "name": "showToolboxDataView",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Data view"
+      },
+      {
+        "name": "showToolboxMagicType",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Enable type switch"
+      },
+      {
+        "name": "toolboxMagicType",
+        "component": "TextArea",
+        "type": "array",
+        "value": [],
+        "des": "Type switch options"
+      },
+      {
+        "name": "showToolboxRestore",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": true,
+        "des": "Restore"
+      },
+      {
+        "name": "showToolboxSaveAsImage",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Save as image"
+      }
+    ],
+    "xAxis": [
+      {
+        "name": "xAxis",
+        "component": "TextArea",
+        "type": "object",
+        "value": {},
+        "des": "x-axis configuration"
+      },
+      {
+        "name": "interval",
+        "component": "Input",
+        "type": "text",
+        "value": "auto",
+        "des": "Force the interval between axis labels. Value: 'auto' or a number like 0, 1, 2, 3, etc."
+      },
+      {
+        "name": "xAxisRotate",
+        "component": "Input",
+        "type": "number",
+        "value": 0,
+        "des": "Rotation angle of axis labels"
+      }
+    ],
+    "yAxis": [
+      {
+        "name": "yAxis",
+        "component": "TextArea",
+        "type": "object",
+        "value": {},
+        "des": "y-axis configuration"
+      },
+      {
+        "name": "YName",
+        "component": "Input",
+        "type": "text",
+        "value": "",
+        "des": "y-axis name"
+      },
+      {
+        "name": "YUnit",
+        "component": "Input",
+        "type": "text",
+        "value": "",
+        "des": "y-axis unit"
+      },
+      {
+        "name": "maxPoint",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Maximum value"
+      },
+      {
+        "name": "minPoint",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Minimum value"
+      },
+      {
+        "name": "averageLine",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Average line"
+      },
+      {
+        "name": "stack",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Stacked data"
+      }
+    ],
+    "y2Axis": [
+      {
+        "name": "showY2",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Whether to show y2-axis"
+      },
+      {
+        "name": "Y2Type",
+        "component": "Select",
+        "type": "array",
+        "value": [
+          "line",
+          "bar"
+        ],
+        "des": "y2-axis chart type"
+      },
+      {
+        "name": "Y2SeriesIndex",
+        "component": "Select",
+        "type": "array",
+        "mode": "tags",
+        "value": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "des": "Specify the series index for y2-axis, either as a number or an array"
+      },
+      {
+        "name": "Y2SeriesName",
+        "component": "Select",
+        "type": "array",
+        "mode": "tags",
+        "value": [],
+        "des": "Specify the data index for y2-axis using the property field name. It takes precedence over Y2SeriesIndex"
+      },
+      {
+        "name": "Y2Name",
+        "component": "Input",
+        "type": "text",
+        "value": "",
+        "des": "y2-axis name"
+      },
+      {
+        "name": "Y2Unit",
+        "component": "Input",
+        "type": "text",
+        "value": "",
+        "des": "y2-axis unit"
+      },
+      {
+        "name": "showY2SplitLine",
+        "component": "Checkbox",
+        "type": "bool",
+        "value": false,
+        "des": "Whether to show the split line of y2-axis"
+      }
+    ],
+    "series": [
+      {
+        "name": "series",
+        "component": "TextArea",
+        "type": "array",
+        "value": [],
+        "des": "Data series configuration"
+      }
+    ]
+  }
+  
